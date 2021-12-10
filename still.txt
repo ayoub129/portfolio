@@ -1,6 +1,4 @@
-1- links
-2- contact
-3- slider
-4- pricing
-5- open image
-6- 2pages
+4- contact
+2- slider
+3- responsive
+5- last touches
