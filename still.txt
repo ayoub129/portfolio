@@ -1,0 +1,12 @@
+1- projects
+2- services
+3- react change
+4- paypal
+5- sticky nav
+6- scroll behavior
+7- animation
+8- hovers
+9- paypal
+10- change image
+11- edit the content
+12- last touches
