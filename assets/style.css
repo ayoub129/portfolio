@@ -64,6 +64,7 @@ header {
 .logo {
   font-size: 1.35rem;
   font-weight: bold;
+  color: white !important;
 }
 
 .logo span {
@@ -173,7 +174,11 @@ header {
 }
 
 .img-full-size {
-  width: 100%;
+  width: 300px;
+}
+
+.circle {
+  border-radius: 50%;
 }
 
 /* services */
@@ -302,6 +307,9 @@ header {
   margin-left: 0.5em;
 }
 
+.h-180 {
+  height: 180px;
+}
 /* pricing */
 .pricing {
   margin: 5em 0 5em 0;
@@ -360,26 +368,51 @@ header {
 }
 
 /* testimonials */
-.testimonials {
-  margin: 3em 0 3em 0;
+.mySlides {
+  display: none
 }
 
-.lh-15 {
-  margin-top: 0.5em;
-  line-height: 1em;
-}
-
-.bullet.active {
-  background-color: var(--primary-color);
-}
-
-.bullet {
+/* The dots/bullets/indicators */
+.dot {
   margin-right: 10px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: rgb(114, 114, 114);
   cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: var(--primary-color);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.testimonials {
+  margin: 10em 0 10em 0;
+}
+
+.lh-15 {
+  margin-top: 0.5em;
+  line-height: 1em;
 }
 
 .mt-5 {
@@ -576,6 +609,7 @@ form .btn-orange {
 
   .res-navigation {
     display: block;
+    transition: 0.8s;
   }
 
   .navigation-phone {
