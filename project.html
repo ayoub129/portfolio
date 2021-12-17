@@ -9,19 +9,36 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     />
+
+     <!-- lightbox -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"
+     integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+
+
+       <!-- aos -->
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- css styles -->
     <link rel="stylesheet" href="assets/style.css" />
     <title>Ayoub_Br</title>
   </head>
   <body>
     <!-- container -->
+    <div class="bg-image">
     <div class="container">
+
+      
       <!-- header -->
       <header>
         <!-- logo -->
         <a href="index.html" class="logo"><span>A</span>youb<span>.</span></a>
         <!-- navbar -->
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
           <ul class="navigation">
             <li><a href="index.html#about" class="nav-link active">About me</a></li>
             <li><a href="index.html#services" class="nav-link">Services</a></li>
@@ -51,100 +68,144 @@
         <!-- call to action -->
         <button class="btn btn-white"><a href="index.html#contact">Contact Me</a></button>
       </ul>
+      <h2 class="fs-2 text-center mt-5" data-aos-duration="2000" data-aos="zoom-in">My Featured Project</h2>
+      <p class="fs-13 fw-italic text-center pb-5 lh-2" data-aos-duration="2000" data-aos="zoom-in">
+         I build diffrent type of projects and customize them
+        base in your needs , see My <span class="text-orange">latest project</span> 
+       </p>
     </div>
-    <section class="d-flex justify-space-around mb-2 bg-white text-dark p-5">
-      <div class="w-35 ms-6">
-        <h1 class="fs-1">Projects</h1>
-      </div>
-      <div class="w-35 me-6">
-        <img src="assets/images/project1.jpg" alt="" class="img-full-size" />
-      </div>
-    </section>
+  </div>
     <div class="container mt-5">
-      <div class="grid-lg-3 grid-md-2 grid-xs-1">
-        <div class="project">
+      <h2 class="text-center">Feauterd Projects</h2>
+      <div class="grid-lg-3 grid-md-2 grid-xs-1 text-center" >
+        <div id="project-1" class="project" data-aos-duration="2000" data-aos="fade-right">
+          <a
+          href="assets/images/project1.png"
+          data-lightbox="models"
+          data-title="Stock management application"
+        >
           <img
-            src="assets/images/project1.jpg"
-            class="img-full-size"
-            alt="project-1"
+            src="assets/images/project1.png"
+            class="img-full-size h-180"
           />
+        </a>
         </div>
-        <div class="project">
+        <div id="project-2" class="project" data-aos-duration="2000" data-aos="zoom-in">
+          <a
+          href="assets/images/blog1.png"
+          data-lightbox="models"
+          data-title="football blog"
+        >
           <img
-            src="assets/images/project2.jpg"
-            class="img-full-size"
-            alt="project2"
+            src="assets/images/blog1.png"
+            class="img-full-size h-180"
           />
+        </a>
         </div>
-        <div class="project">
+        <div id="project-3" class="project" data-aos-duration="2000" data-aos="fade-left">
+          <a
+          href="assets/images/store1.jfif"
+          data-lightbox="models"
+          data-title="store woocomerce"
+        >
           <img
-            src="assets/images/project3.jpg"
-            class="img-full-size"
-            alt="project3"
+            src="assets/images/store1.jfif"
+            class="img-full-size h-180"
           />
+        </a>
         </div>
-        <div class="project">
+        <div id="project-4" class="project" data-aos-duration="2000" data-aos="fade-right">
+          <a
+          href="assets/images/webo.png"
+          data-lightbox="models"
+          data-title="store woocomerce"
+        >
           <img
-            src="assets/images/project3.jpg"
-            class="img-full-size"
-            alt="project4"
+            src="assets/images/webo.png"
+            class="img-full-size h-180"
           />
+        </a>
         </div>
-        <div class="project">
+        <div id="project-5" class="project" data-aos-duration="2000" data-aos="zoom-in">
+          <a
+          href="assets/images/tasks.png"
+          data-lightbox="models"
+          data-title="store woocomerce"
+        >
           <img
-            src="assets/images/project3.jpg"
-            class="img-full-size"
-            alt="project5"
+            src="assets/images/tasks.png"
+            class="img-full-size h-180"
           />
+        </a>
         </div>
-        <div class="project">
+        <div id="project-6" class="project" data-aos-duration="2000" data-aos="fade-left">
+          <a
+          href="assets/images/store-react.png"
+          data-lightbox="models"
+          data-title="store woocomerce"
+        >
           <img
-            src="assets/images/project3.jpg"
-            class="img-full-size"
-            alt="project5"
+            src="assets/images/store-react.png"
+            class="img-full-size h-180"
           />
-        </div>
-        <div class="project">
-          <img
-            src="assets/images/project3.jpg"
-            class="img-full-size"
-            alt="project5"
-          />
-        </div>
-        <div class="project">
-          <img
-            src="assets/images/project3.jpg"
-            class="img-full-size"
-            alt="project5"
-          />
-        </div>
-        <div class="project">
-          <img
-            src="assets/images/project3.jpg"
-            class="img-full-size"
-            alt="project5"
-          />
+        </a>
         </div>
       </div>
-      <section class="newsletter text-center">
-        <h2 class="fs-3 text-orange">
-          Subscribe to get information, latest news and other
-          <br class="d-none" />
-          intresting offers about Ayoub
-        </h2>
-        <div class="mt-4">
-          <input type="text" placeholder="Your email" id="email-2" />
-          <button class="btn btn-orange">Subscribe</button>
+      <section class="contact mt-5" id="contact">
+        <div class="d-flex justify-space-between mt-2">
+          <div class="contact-info">
+            <h2 class="fs-2  mb-2">
+              Have A Project  <br> In Mind ?
+            </h2>
+            <p class="fs-4 fw-italic">Reach out to us , We can make <br> somthing awesome together</p>
+
+            <div class="mt-5">
+              <ul class="mt-2">
+                <li class="fs-normal ">ADDRESS</li>
+                <li class="fw-bold fs-4">Morocco</li>
+              </ul>
+              <ul class="mt-2">
+                <li class="fs-normal ">EMAIL</li>
+                <li class="fw-bold fs-4">berouijelayoub@gmail.com</li>
+              </ul>
+              <ul class="mt-2">
+                <li class="fs-normal ">PHONE</li>
+                <li class="fw-bold fs-4">+212 635747467</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <form id="contact-form" name="portfolio" netlify netlify-honeypot="bot-field" method="post" data-aos-duration="2000" data-aos="fade-left">
+            <h2 class="fs-2  mb-2">
+              Contact Us
+            </h2>
+            <input type="hidden" name="form-name" value="portfolio" />
+            <div class="form-group">
+              <label for="name"> Name</label>
+              <input type="text" name="username" id="name" placeholder="Enter Your Full Name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text"  name="email" id="email" placeholder="Enter Your Email" />
+            </div>
+            <div class="form-group">
+              <label for="msg">Details</label>
+              <textarea type="text" name="msg"  id="msg"  rows="5" placeholder="Enter Your Project Details"></textarea>
+            </div>
+            <button class="btn btn-orange" type="submit" name="send">Send Message</button>
+          </form>
         </div>
       </section>
-      <footer class="footer justify-space-between mt-5">
-        <div class="flex-35">
+      </main>
+      <footer class="footer justify-space-between">
+        <div class="flex-35" data-aos-duration="2000" data-aos="fade-right">
           <p class="logo"><span>A</span>youb<span>.</span></p>
           <span class="fs-13 fw-italic"
             >feel free to contact me if you want to get your project done</span
           >
         </div>
-        <div class="flex-60">
+        <div class="flex-60" data-aos-duration="2000" data-aos="fade-left">
           <h3 class="fs-3">
             if you have any queries , please feel free to contact me
           </h3>
@@ -159,49 +220,56 @@
             </ul>
             <ul class="contact-list">
               <li class="fw-bold">Get In Touch</li>
-              <li class="fs-normal">Tangier Morocco</li>
+              <li class="fs-normal">
+                Tangier Morocco
+              </li>
             </ul>
           </div>
         </div>
       </footer>
     </div>
-    <div class="copyright mt-4">
+    <div class="copyright mt-4" >
       <div class="container d-flex justify-space-between">
         <p class="fs-normal">
-          &copy; <span id="date"></span> all rights reserved
+          &copy; <span id="date"></span> all rights reserved 
         </p>
         <ul class="contact-list d-flex">
           <li class="fs-normal me-3">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.facebook.com/profile.php?id=100074297456010"
-            >
-              <i class="fab fa-facebook"></i>
-            </a>
+            <a  target="_blank"
+            rel="noreferrer"
+            href="https://www.facebook.com/profile.php?id=100074297456010">
+            <i class="fab fa-facebook"></i>
+          </a>
           </li>
           <li class="fs-normal me-3">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.tiktok.com/@abbravei"
+            <a target="_blank"
+            rel="noreferrer"
+            href="https://www.tiktok.com/@abbravei"
             >
-              <i class="fab fa-tiktok"></i>
-            </a>
+            <i class="fab fa-tiktok"></i>
+          </a>
           </li>
           <li class="fs-normal me-3">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.instagram.com/justforbuisiness/"
-            >
-              <i class="fab fa-instagram"></i>
+            <a  target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/justforbuisiness/">
+            <i class="fab fa-instagram"></i>
             </a>
           </li>
         </ul>
       </div>
     </div>
-    <!-- scripts -->
+      <!-- Lightbox Script tag   -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.js"
+    integrity="sha512-0rYcJjaqTGk43zviBim8AEjb8cjUKxwxCqo28py38JFKKBd35yPfNWmwoBLTYORC9j/COqldDc9/d1B7dhRYmg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+   ></script>
+
+      <!-- Aos -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- scripts -->
     <script src="assets/main.js"></script>
   </body>
 </html>

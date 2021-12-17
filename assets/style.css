@@ -42,6 +42,7 @@ button {
 .container {
   width: 80%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /* header styles */
@@ -112,13 +113,13 @@ header {
 }
 
 .btn-white a {
-  color: #111111;
+  color: #111111 !important;
 }
 
 /* hero-section */
 
 .hero {
-  margin: 5em 0 5em 0;
+  margin: 10em 0 5em 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -289,9 +290,13 @@ header {
 
 .title,
 .viewall,
-.testimo-title,
-.testimo-cards {
+.testimo-title {
   flex-basis: 50%;
+}
+
+.testimo-cards {
+  flex-basis: 40%;
+  margin-right: 5%;
 }
 
 .mb-2 {
@@ -369,7 +374,7 @@ header {
 
 /* testimonials */
 .mySlides {
-  display: none
+  display: none;
 }
 
 /* The dots/bullets/indicators */
@@ -383,7 +388,8 @@ header {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: var(--primary-color);
 }
 
@@ -396,15 +402,22 @@ header {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 
 .testimonials {
   margin: 10em 0 10em 0;
@@ -417,6 +430,14 @@ header {
 
 .mt-5 {
   margin-top: 5em;
+}
+
+.mb-5 {
+  margin-bottom: 5em !important;
+}
+
+.pb-5 {
+  padding-bottom: 10em !important;
 }
 
 .testimo-cards {
@@ -448,10 +469,12 @@ header {
 
 .testimo-img {
   position: absolute;
-  top: -5.5em;
-  left: -5.5em;
-  width: 100px;
+  top: -4.5em;
+  left: -4.5em;
+  width: 50px;
+  height: 50px;
   z-index: 2;
+  border-radius: 50%;
 }
 
 /* contact */
@@ -541,6 +564,10 @@ form .btn-orange {
 
 .d-md-flex {
   display: none;
+}
+
+.btn a {
+  color: white;
 }
 
 /* responsive design */
@@ -795,7 +822,7 @@ form .btn-orange {
 
   /* testimonials */
   .testimonials {
-    margin: 3em 0 3em 3em;
+    margin: 3em 0;
   }
 
   .testimo-cards {
@@ -909,6 +936,10 @@ form .btn-orange {
     width: 95%;
   }
 
+  .mt-sm-5 {
+    margin-top: 5em;
+  }
+
   /* header styles */
 
   .res-navigation {
@@ -981,7 +1012,7 @@ form .btn-orange {
 
   /* testimonials */
   .testimonials {
-    margin: 3em 0 3em 3em;
+    margin: 3em 0;
   }
 
   .testimo-cards {
@@ -1092,7 +1123,134 @@ form .btn-orange {
   }
 }
 
-/* services page */
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .service-box {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  height: 100%;
+  padding: 60px 30px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.services .service-box .icon {
+  font-size: 36px;
+  padding: 40px 20px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 25px;
+  display: inline-block;
+  line-height: 0;
+  transition: 0.3s;
+}
+.services .service-box h3 {
+  color: #444444;
+  font-weight: 700;
+}
+.services .service-box .read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 20px;
+}
+.services .service-box .read-more i {
+  line-height: 0;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.services .service-box.blue {
+  border-bottom: 3px solid #2db6fa;
+}
+.services .service-box.blue .icon {
+  color: #2db6fa;
+  background: #dbf3fe;
+}
+.services .service-box.blue .read-more {
+  color: #2db6fa;
+}
+.services .service-box.blue:hover {
+  background: #2db6fa;
+}
+.services .service-box.orange {
+  border-bottom: 3px solid #f68c09;
+}
+.services .service-box.orange .icon {
+  color: #f68c09;
+  background: #fde3c4;
+}
+.services .service-box.orange .read-more {
+  color: #f68c09;
+}
+.services .service-box.orange:hover {
+  background: #f68c09;
+}
+.services .service-box.green {
+  border-bottom: 3px solid #08da4e;
+}
+.services .service-box.green .icon {
+  color: #08da4e;
+  background: #cffddf;
+}
+.services .service-box.green .read-more {
+  color: #08da4e;
+}
+.services .service-box.green:hover {
+  background: #08da4e;
+}
+.services .service-box.red {
+  border-bottom: 3px solid #e9222c;
+}
+.services .service-box.red .icon {
+  color: #e9222c;
+  background: #fef7f8;
+}
+.services .service-box.red .read-more {
+  color: #e9222c;
+}
+.services .service-box.red:hover {
+  background: #e9222c;
+}
+.services .service-box.purple {
+  border-bottom: 3px solid #b50edf;
+}
+.services .service-box.purple .icon {
+  color: #b50edf;
+  background: #f8e4fd;
+}
+.services .service-box.purple .read-more {
+  color: #b50edf;
+}
+.services .service-box.purple:hover {
+  background: #b50edf;
+}
+.services .service-box.pink {
+  border-bottom: 3px solid #f51f9c;
+}
+.services .service-box.pink .icon {
+  color: #f51f9c;
+  background: #feecf7;
+}
+.services .service-box.pink .read-more {
+  color: #f51f9c;
+}
+.services .service-box.pink:hover {
+  background: #f51f9c;
+}
+.services .service-box:hover h3,
+.services .service-box:hover p,
+.services .service-box:hover .read-more {
+  color: #fff;
+}
+.services .service-box:hover .icon {
+  background: #fff;
+}
+.services .d-block {
+  display: block;
+}
+
 .w-35 {
   width: 35%;
 }
@@ -1124,4 +1282,86 @@ form .btn-orange {
 
 .p-3 {
   padding: 3em;
+}
+
+.bg-image {
+  background-image: url("./images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 80%;
+  background-color: black;
+  z-index: 150;
+  padding: 1em;
+  transition: 0.8s;
+}
+
+/* hovers */
+.btn-white-hv,
+.btn-white-hv a {
+  transition: 0.8s;
+}
+
+.btn-white-hv:hover {
+  transition: 0.8s;
+  background-color: var(--primary-color);
+}
+
+.btn-white-hv:hover a {
+  color: white !important;
+  transition: 0.8s;
+}
+
+.btn-orange-hv {
+  transition: 0.8s;
+}
+
+.btn-orange-hv:hover {
+  background-color: var(--third-color);
+  transition: 0.8s;
+}
+
+.small-cards,
+.small-cards .pointer,
+.small-cards .icon {
+  transition: 0.8s;
+}
+
+.small-cards:hover {
+  background-color: var(--primary-color);
+  transition: 0.8s;
+}
+
+.small-cards:hover .pointer {
+  color: white;
+  transition: 0.8s;
+}
+
+.small-cards:hover .icon {
+  background-color: white;
+  transition: 0.8s;
+}
+
+.link-orange:hover,
+.link-orange:hover i {
+  transition: 0.2s;
+  color: var(--third-color) !important;
+}
+
+.link-orange {
+  transition: 0.2s;
+}
+
+.btn-border-orange:hover {
+  background-color: var(--primary-color);
+  transition: 0.7s;
+}
+
+.btn-border-orange {
+  transition: 0.7s;
 }

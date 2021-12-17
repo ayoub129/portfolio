@@ -20,19 +20,18 @@
     />
 
     <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- css styles -->
     <link rel="stylesheet" href="assets/style.css" />
-    
+
     <title>Ayoub_Br</title>
   </head>
   <body>
     <!-- container -->
     <div class="container">
       <!-- header -->
-      <header>
+      <header id="navbar">
         <!-- logo -->
         <a href="index.html" class="logo"><span>A</span>youb<span>.</span></a>
         <!-- navbar -->
@@ -45,7 +44,9 @@
             <li><a href="#testimonials" class="nav-link">testimonials</a></li>
           </ul>
           <!-- call to action -->
-          <button class="btn btn-white"> <a href="#contact">Contact Me</a> </button>
+          <button class="btn btn-white btn-white-hv">
+            <a href="#contact">Contact Me</a>
+          </button>
         </nav>
         <!-- navbar on small screen -->
         <div class="res-navigation" id="open">
@@ -53,27 +54,39 @@
         </div>
       </header>
       <ul class="navigation-phone" id="nav-phone">
-        <li class="mb-2"><a href="#about" class="nav-link ">About me</a></li>
+        <li class="mb-2"><a href="#about" class="nav-link">About me</a></li>
         <li class="mb-2"><a href="#services" class="nav-link">Services</a></li>
         <li class="mb-2"><a href="#projects" class="nav-link">Projects</a></li>
         <li class="mb-2"><a href="#pricing" class="nav-link">Pricing</a></li>
-        <li class="mb-2"><a href="#testimonials" class="nav-link">testimonials</a></li>
+        <li class="mb-2">
+          <a href="#testimonials" class="nav-link">testimonials</a>
+        </li>
 
-          <!-- call to action -->
-          <button class="btn btn-white"><a href="#contact">Contact Me</a> </button>
+        <!-- call to action -->
+        <button class="btn btn-white btn-white-hv">
+          <a href="#contact">Contact Me</a>
+        </button>
       </ul>
       <!-- hero -->
-      <div class="hero" id="about" >
+      <div class="hero" id="about">
         <div class="about" data-aos-duration="2000" data-aos="fade-right">
           <div class="button">Welcome I'm</div>
           <h1 class="fs-1 fw-bold">Ayoub Br</h1>
           <p class="fs-18">Web Designer & Developper</p>
           <p class="fs-13 my-5 lh-2">
-            Hello and welcome! I'm a digital designer and web developer based in Morocco, specializing in visual brand identity, UI/UX design and web development.
+            Hello and welcome! I'm a digital designer and web developer based in
+            Morocco, specializing in visual brand identity, UI/UX design and web
+            development.
           </p>
-          <button class="btn btn-ring btn-orange">Contact Me</button>
+          <button class="btn btn-ring btn-orange btn-orange-hv">
+            Contact Me
+          </button>
         </div>
-        <div class="about-img text-center" data-aos-duration="2000" data-aos="fade-left">
+        <div
+          class="about-img text-center"
+          data-aos-duration="2000"
+          data-aos="fade-left"
+        >
           <img
             src="./assets/images/abbrevie.jpeg"
             alt="Avatar image for ayoub"
@@ -82,14 +95,36 @@
         </div>
       </div>
       <main class="main">
-        <section class="services" id="services" >
-          <h2 class="fs-2 text-center" data-aos-duration="2000" data-aos="zoom-in">Our Services</h2>
-          <p class="fs-13 fw-italic text-center lh-2" data-aos-duration="2000" data-aos="zoom-in">
-           <span class="text-orange">Web development services</span>  are used to design, build, support, and evolve all types of web-based software.<br class="d-none" /> With <span class="text-orange">5 years</span>  in web development,
-            Ayoub delivers  <span class="text-orange">intuitive</span>  and <span class="text-orange">fast</span> websites,  web portals, and other web <br class="d-none" />  solutions that bring about <span class="text-orange">digital transformation</span>  and <span class="text-orange">enhance</span>  business workflows.
+        <section class="services" id="services">
+          <h2
+            class="fs-2 text-center"
+            data-aos-duration="2000"
+            data-aos="zoom-in"
+          >
+            Our Services
+          </h2>
+          <p
+            class="fs-13 fw-italic text-center lh-2"
+            data-aos-duration="2000"
+            data-aos="zoom-in"
+          >
+            <span class="text-orange">Web development services</span> are used
+            to design, build, support, and evolve all types of web-based
+            software.<br class="d-none" />
+            With <span class="text-orange">5 years</span> in web development,
+            Ayoub delivers <span class="text-orange">intuitive</span> and
+            <span class="text-orange">fast</span> websites, web portals, and
+            other web <br class="d-none" />
+            solutions that bring about
+            <span class="text-orange">digital transformation</span> and
+            <span class="text-orange">enhance</span> business workflows.
           </p>
-          <div class="grid-lg-3 grid-md-2 grid-xs-1" data-aos-duration="2000" data-aos="zoom-in">
-            <div class="small-cards active">
+          <div
+            class="grid-lg-3 grid-md-2 grid-xs-1"
+            data-aos-duration="2000"
+            data-aos="zoom-in"
+          >
+            <div class="small-cards">
               <div class="icon">
                 <i class="fas fa-database fa-2x"></i>
               </div>
@@ -129,26 +164,31 @@
               <div class="icon">
                 <i class="fab fa-wordpress fa-2x"></i>
               </div>
-              <p class="fs-normal">WordPress Themes</p>
+              <p class="fs-normal">Content Management System</p>
               <a href="services.html">
                 <i class="fas fa-arrow-right pointer"></i>
               </a>
             </div>
             <div class="small-cards">
               <div class="icon">
-                <i class="fas fa-tools fa-2x"></i>
+                <i class="fas fa-store fa-2x"></i>
               </div>
-              <p class="fs-normal">Problem Solving</p>
+              <p class="fs-normal">E-commerce</p>
               <a href="services.html">
                 <i class="fas fa-arrow-right pointer"></i>
               </a>
             </div>
           </div>
           <div class="text-center" data-aos-duration="2000" data-aos="zoom-out">
-            <a href="services.html" class="btn btn-ring btn-orange my-5"> View All</a>
+            <a
+              href="services.html"
+              class="btn btn-ring btn-orange btn-orange-hv"
+            >
+              View All</a
+            >
           </div>
         </section>
-        <section class="Projects" id="projects" >
+        <section class="Projects" id="projects">
           <div class="d-flex justify-space-between">
             <div class="title" data-aos-duration="2000" data-aos="fade-right">
               <p class="fs-18">Our Portfolio</p>
@@ -157,7 +197,7 @@
             <div class="viewall" data-aos-duration="2000" data-aos="fade-left">
               <p class="fs-13 mb-2">
                 we are build diffrent type of projects and customize them
-                <br class="d-none"/>
+                <br class="d-none" />
                 base in your needs , see our latest project
               </p>
               <a href="project.html" class="link-orange">
@@ -166,42 +206,57 @@
               </a>
             </div>
           </div>
-          <div class="grid-lg-3 grid-md-2 grid-xs-1 text-center" >
-            <div id="project-1" class="project" data-aos-duration="2000" data-aos="fade-right">
-              <a
-              href="assets/images/project1.png"
-              data-lightbox="models"
-              data-title="Stock management application"
+          <div class="grid-lg-3 grid-md-2 grid-xs-1 text-center">
+            <div
+              id="project-1"
+              class="project"
+              data-aos-duration="2000"
+              data-aos="fade-right"
             >
-              <img
-                src="assets/images/project1.png"
-                class="img-full-size h-180"
-              />
-            </a>
+              <a
+                href="assets/images/project1.png"
+                data-lightbox="models"
+                data-title="Stock management application"
+              >
+                <img
+                  src="assets/images/project1.png"
+                  class="img-full-size h-180"
+                />
+              </a>
             </div>
-            <div id="project-2" class="project" data-aos-duration="2000" data-aos="zoom-in">
-              <a
-              href="assets/images/blog1.png"
-              data-lightbox="models"
-              data-title="football blog"
+            <div
+              id="project-2"
+              class="project"
+              data-aos-duration="2000"
+              data-aos="zoom-in"
             >
-              <img
-                src="assets/images/blog1.png"
-                class="img-full-size h-180"
-              />
-            </a>
+              <a
+                href="assets/images/blog1.png"
+                data-lightbox="models"
+                data-title="football blog"
+              >
+                <img
+                  src="assets/images/blog1.png"
+                  class="img-full-size h-180"
+                />
+              </a>
             </div>
-            <div id="project-3" class="project" data-aos-duration="2000" data-aos="fade-left">
-              <a
-              href="assets/images/store1.jfif"
-              data-lightbox="models"
-              data-title="store woocomerce"
+            <div
+              id="project-3"
+              class="project"
+              data-aos-duration="2000"
+              data-aos="fade-left"
             >
-              <img
-                src="assets/images/store1.jfif"
-                class="img-full-size h-180"
-              />
-            </a>
+              <a
+                href="assets/images/store1.jfif"
+                data-lightbox="models"
+                data-title="store woocomerce"
+              >
+                <img
+                  src="assets/images/store1.jfif"
+                  class="img-full-size h-180"
+                />
+              </a>
             </div>
           </div>
         </section>
@@ -210,10 +265,13 @@
           <p class="fs-13 text-center fw-italic">
             create your dream website with our affordable pricing plan
             <br class="d-none" />
-            
           </p>
           <div class="grid-lg-4 grid-md-2 grid-xs-1">
-            <div class="pricing-card" data-aos-duration="2000" data-aos="zoom-out">
+            <div
+              class="pricing-card"
+              data-aos-duration="2000"
+              data-aos="zoom-out"
+            >
               <h4 class="text-center fw-bold fs-3">BASIC</h4>
               <h3 class="price text-center fw-bold fs-3">$129.99</h3>
               <hr class="line-full-width" />
@@ -231,12 +289,18 @@
                 <li class="benefit text-secondary">Web application</li>
               </ul>
               <div class="text-center">
-                <button class="btn btn-border-orange">Contact Us</button>
+                <button class="btn btn-border-orange">
+                  <a href="#contact">Contact Us</a>
+                </button>
               </div>
             </div>
-            <div class="pricing-card" data-aos-duration="2000" data-aos="zoom-out">
+            <div
+              class="pricing-card"
+              data-aos-duration="2000"
+              data-aos="zoom-out"
+            >
               <h4 class="text-center fw-bold fs-3">STANDARD</h4>
-              <h3 class="price text-center fw-bold fs-3">$439.99</h3>
+              <h3 class="price text-center fw-bold fs-3">$319.99</h3>
               <hr class="line-full-width" />
               <ul class="benefits">
                 <li class="benefit">Up To 20 website pages</li>
@@ -252,12 +316,18 @@
                 <li class="benefit text-secondary">Web application</li>
               </ul>
               <div class="text-center">
-                <button class="btn btn-border-orange">Contact Us</button>
+                <button class="btn btn-border-orange">
+                  <a href="#contact">Contact Us</a>
+                </button>
               </div>
             </div>
-            <div class="pricing-card" data-aos-duration="2000" data-aos="zoom-out">
+            <div
+              class="pricing-card"
+              data-aos-duration="2000"
+              data-aos="zoom-out"
+            >
               <h4 class="text-center fw-bold fs-3">PREMIUM</h4>
-              <h3 class="price text-center fw-bold fs-3">$1599.99</h3>
+              <h3 class="price text-center fw-bold fs-3">$699.99</h3>
               <hr class="line-full-width" />
               <ul class="benefits">
                 <li class="benefit">Up To 40 website pages</li>
@@ -273,10 +343,16 @@
                 <li class="benefit text-secondary">Web application</li>
               </ul>
               <div class="text-center">
-                <button class="btn btn-orange mt-2">Contact Us</button>
+                <button class="btn btn-orange btn-orange-hv mt-2">
+                  <a href="#contact">Contact Us</a>
+                </button>
               </div>
             </div>
-            <div class="pricing-card" data-aos-duration="2000" data-aos="zoom-out">
+            <div
+              class="pricing-card"
+              data-aos-duration="2000"
+              data-aos="zoom-out"
+            >
               <h4 class="text-center fw-bold fs-3">GOLDEN</h4>
               <h3 class="price text-center fw-bold fs-3">custom</h3>
               <hr class="line-full-width" />
@@ -294,75 +370,85 @@
                 <li class="benefit">Web application</li>
               </ul>
               <div class="text-center">
-                <button class="btn btn-border-orange">Contact Us</button>
+                <button class="btn btn-border-orange">
+                  <a href="#contact">Contact Us</a>
+                </button>
               </div>
             </div>
           </div>
         </section>
-        <section class="testimonials " id="testimonials">
+        <section class="testimonials" id="testimonials">
           <div class="d-flex justify-space-between mt-2">
-            <div class="testimo-title" data-aos-duration="2000" data-aos="fade-right">
+            <div
+              class="testimo-title"
+              data-aos-duration="2000"
+              data-aos="fade-right"
+            >
               <h4 class="fs-normal">TESTIMONIALS</h4>
-              <h2 class="fs-1 lh-15">
-                What People Say About 
-                Me
-              </h2>
+              <h2 class="fs-1 lh-15">What People Say About Me</h2>
               <div class="mt-5 d-flex d-md-none">
                 <div class="dot" onclick="currentSlide(1)"></div>
                 <div class="dot" onclick="currentSlide(2)"></div>
                 <div class="dot" onclick="currentSlide(3)"></div>
               </div>
             </div>
-              <div class="testimo-cards mySlides fade" data-aos-duration="2000" data-aos="fade-left">
-                <img
-                  src="assets/images/avatar.png"
-                  alt="avatar"
-                  class="testimo-img"
-                />
-                <div class="card-testimonial">
-                  <p class="fs-13 lh-2">
-                    Your real estate application is very complete, made
-                    many tasks easier for me, easily allows me to manage
-                    rents and generate e-receipts
-  
-                  </p>
-                </div>
-                <p class="testimonials-name">Ayoub Br</p>
+            <div
+              class="testimo-cards mySlides fade"
+              data-aos-duration="2000"
+              data-aos="fade-left"
+            >
+              <img
+                src="assets/images/testimonials-3.jpg"
+                alt="testimo2"
+                class="testimo-img"
+              />
+              <div class="card-testimonial">
+                <p class="fs-normal lh-2">
+                  You are always available, we are very satisfied with your
+                  online store. thank you
+                </p>
               </div>
-              <div class="testimo-cards mySlides fade" data-aos-duration="2000" data-aos="fade-left">
-                <img
-                  src="assets/images/avatar.png"
-                  alt="avatar"
-                  class="testimo-img"
-                />
-                <div class="card-testimonial">
-                  <p class="fs-13 lh-2">
-                    Your real estate application is very complete, made
-                    many tasks easier for me, easily allows me to manage
-                    rents and generate e-receipts
-  
-                  </p>
-                </div>
-                <p class="testimonials-name">Moha</p>
+              <p class="testimonials-name">Nora Jones</p>
+            </div>
+            <div
+              class="testimo-cards mySlides fade"
+              data-aos-duration="2000"
+              data-aos="fade-left"
+            >
+              <img
+                src="assets/images/testimonials-2.jpg"
+                alt="testimo2"
+                class="testimo-img"
+              />
+              <div class="card-testimonial">
+                <p class="fs-normal lh-2">
+                  Your real estate application is very complete, made many tasks
+                  easier for me, easily allows me to manage rents and generate
+                  e-receipts
+                </p>
               </div>
-              <div class="testimo-cards mySlides fade" data-aos-duration="2000" data-aos="fade-left">
-                <img
-                  src="assets/images/avatar.png"
-                  alt="avatar"
-                  class="testimo-img"
-                />
-                <div class="card-testimonial">
-                  <p class="fs-13 lh-2">
-                    Your real estate application is very complete, made
-                    many tasks easier for me, easily allows me to manage
-                    rents and generate e-receipts
-  
-                  </p>
-                </div>
-                <p class="testimonials-name">si Brahim</p>
+              <p class="testimonials-name">Mohammed Mrini</p>
+            </div>
+            <div
+              class="testimo-cards mySlides fade"
+              data-aos-duration="2000"
+              data-aos="fade-left"
+            >
+              <img
+                src="assets/images/testimonials-1.jpg"
+                alt="testimo3"
+                class="testimo-img"
+              />
+              <div class="card-testimonial">
+                <p class="fs-normal lh-2">
+                  We are very satisfied Working With you, the design is very
+                  beautiful, the site is fast, flexible and secure.
+                </p>
               </div>
+              <p class="testimonials-name">Brahim Moawi</p>
+            </div>
             <div class="mt-5 d-md-flex m-0-auto">
-              <div class="dot " onclick="currentSlide(1)"></div>
+              <div class="dot" onclick="currentSlide(1)"></div>
               <div class="dot" onclick="currentSlide(2)"></div>
               <div class="dot" onclick="currentSlide(3)"></div>
             </div>
@@ -371,58 +457,106 @@
         <section class="contact" id="contact">
           <div class="d-flex justify-space-between mt-2">
             <div class="contact-info">
-              <h2 class="fs-2  mb-2">
-                Have A Project  <br> In Mind ?
+              <h2 class="fs-2 mb-2">
+                Have A Project <br />
+                In Mind ?
               </h2>
-              <p class="fs-4 fw-italic">Reach out to us , We can make <br> somthing awesome together</p>
+              <p class="fs-4 fw-italic">
+                Reach out to us , We can make <br />
+                somthing awesome together
+              </p>
 
               <div class="mt-5">
                 <ul class="mt-2">
-                  <li class="fs-normal ">ADDRESS</li>
+                  <li class="fs-normal">ADDRESS</li>
                   <li class="fw-bold fs-4">Morocco</li>
                 </ul>
                 <ul class="mt-2">
-                  <li class="fs-normal ">EMAIL</li>
+                  <li class="fs-normal">EMAIL</li>
                   <li class="fw-bold fs-4">berouijelayoub@gmail.com</li>
                 </ul>
                 <ul class="mt-2">
-                  <li class="fs-normal ">PHONE</li>
+                  <li class="fs-normal">PHONE</li>
                   <li class="fw-bold fs-4">+212 635747467</li>
                 </ul>
               </div>
-
             </div>
 
-            <form id="contact-form" name="portfolio" netlify netlify-honeypot="bot-field" method="post" data-aos-duration="2000" data-aos="fade-left">
-              <h2 class="fs-2  mb-2">
-                Contact Us
-              </h2>
+            <form
+              id="contact-form"
+              name="portfolio"
+              netlify
+              netlify-honeypot="bot-field"
+              method="post"
+              data-aos-duration="2000"
+              data-aos="fade-left"
+            >
+              <h2 class="fs-2 mb-2">Contact Us</h2>
               <input type="hidden" name="form-name" value="portfolio" />
               <div class="form-group">
                 <label for="name"> Name</label>
-                <input type="text" name="username" id="name" placeholder="Enter Your Full Name" />
+                <input
+                  type="text"
+                  name="username"
+                  id="name"
+                  placeholder="Enter Your Full Name"
+                />
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text"  name="email" id="email" placeholder="Enter Your Email" />
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Enter Your Email"
+                />
               </div>
               <div class="form-group">
                 <label for="msg">Details</label>
-                <textarea type="text" name="msg"  id="msg"  rows="5" placeholder="Enter Your Project Details"></textarea>
+                <textarea
+                  type="text"
+                  name="msg"
+                  id="msg"
+                  rows="5"
+                  placeholder="Enter Your Project Details"
+                ></textarea>
               </div>
-              <button class="btn btn-orange" type="submit" name="send">Send Message</button>
+              <button
+                class="btn btn-orange btn-orange-hv"
+                type="submit"
+                name="send"
+              >
+                Send Message
+              </button>
             </form>
           </div>
         </section>
-        <section class="newsletter text-center" data-aos-duration="2000" data-aos="zoom-in">
-          <h2 class="fs-3 text-orange ">
-            Subscribe to get information, latest news and other <br class="d-none" />
+        <section
+          class="newsletter text-center"
+          data-aos-duration="2000"
+          data-aos="zoom-in"
+        >
+          <h2 class="fs-3 text-orange">
+            Subscribe to get information, latest news and other
+            <br class="d-none" />
             intresting offers about Ayoub
           </h2>
-          <form class="mt-4" name="newsletter" netlify netlify-honeypot="bot-field" method="post" >
+          <form
+            class="mt-4"
+            name="newsletter"
+            netlify
+            netlify-honeypot="bot-field"
+            method="post"
+          >
             <input type="hidden" name="form-name" value="newsletter" />
             <input type="text" placeholder="Your email" id="email-2" />
-            <button class="btn btn-orange" type="submit" name="send">Subscribe</button>
+            <button
+              class="btn btn-orange btn-orange-hv"
+              type="submit"
+              name="send"
+            >
+              Subscribe
+            </button>
           </form>
         </section>
       </main>
@@ -448,56 +582,58 @@
             </ul>
             <ul class="contact-list">
               <li class="fw-bold">Get In Touch</li>
-              <li class="fs-normal">
-                Tangier Morocco
-              </li>
+              <li class="fs-normal">Tangier Morocco</li>
             </ul>
           </div>
         </div>
       </footer>
     </div>
-    <div class="copyright mt-4" >
+    <div class="copyright mt-4">
       <div class="container d-flex justify-space-between">
         <p class="fs-normal">
-          &copy; <span id="date"></span> all rights reserved 
+          &copy; <span id="date"></span> all rights reserved
         </p>
         <ul class="contact-list d-flex">
           <li class="fs-normal me-3">
-            <a  target="_blank"
-            rel="noreferrer"
-            href="https://www.facebook.com/profile.php?id=100074297456010">
-            <i class="fab fa-facebook"></i>
-          </a>
-          </li>
-          <li class="fs-normal me-3">
-            <a target="_blank"
-            rel="noreferrer"
-            href="https://www.tiktok.com/@abbravei"
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/profile.php?id=100074297456010"
             >
-            <i class="fab fa-tiktok"></i>
-          </a>
+              <i class="fab fa-facebook"></i>
+            </a>
           </li>
           <li class="fs-normal me-3">
-            <a  target="_blank"
-                rel="noreferrer"
-                href="https://www.instagram.com/justforbuisiness/">
-            <i class="fab fa-instagram"></i>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.tiktok.com/@abbravei"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </li>
+          <li class="fs-normal me-3">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/justforbuisiness/"
+            >
+              <i class="fab fa-instagram"></i>
             </a>
           </li>
         </ul>
       </div>
     </div>
     <!-- Lightbox Script tag   -->
-  <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.js"
-  integrity="sha512-0rYcJjaqTGk43zviBim8AEjb8cjUKxwxCqo28py38JFKKBd35yPfNWmwoBLTYORC9j/COqldDc9/d1B7dhRYmg=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.js"
+      integrity="sha512-0rYcJjaqTGk43zviBim8AEjb8cjUKxwxCqo28py38JFKKBd35yPfNWmwoBLTYORC9j/COqldDc9/d1B7dhRYmg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-<!-- Aos -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- scripts -->
     <script src="assets/main.js"></script>
