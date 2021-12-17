@@ -1,406 +1,319 @@
-/* fonts */
 @font-face {
   font-family: Elmessiri;
   src: url(./fonts/ElMessiri-VariableFont_wght.ttf);
 }
-
-/* variables */
 :root {
   --primary-color: #ff4900;
   --secondary-color: #31140b;
   --third-color: #c83b05;
-  --dark-light: #111111;
+  --dark-light: #111;
 }
-
-/* global styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 body {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   font-family: Elmessiri;
 }
-
 a {
   text-decoration: none;
 }
-
 li {
   list-style: none;
 }
-
 input,
 button {
   outline: none;
 }
-
 .container {
   width: 80%;
   margin: 0 auto;
   overflow-x: hidden;
 }
-
-/* header styles */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 1em;
 }
-
 .res-navigation,
 .navigation-phone {
   display: none;
 }
-
 .res-navigation i {
   cursor: pointer;
 }
-
 .logo {
   font-size: 1.35rem;
-  font-weight: bold;
-  color: white !important;
+  font-weight: 700;
+  color: #fff !important;
 }
-
 .logo span {
   color: var(--primary-color);
   font-size: 1.5rem;
 }
-
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 65%;
 }
-
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 60%;
 }
-
 .nav-link {
-  color: white;
+  color: #fff;
 }
-
 .nav-link.active {
   background-color: var(--primary-color);
   padding: 8px;
   padding-top: 1.5em;
 }
-
 .nav-link:hover:not(.active) {
   color: var(--primary-color);
 }
-
 .btn {
   padding: 12px;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid #000;
   cursor: pointer;
 }
-
 .btn-white {
-  background-color: white;
+  background-color: #fff;
 }
-
 .btn-white a {
-  color: #111111 !important;
+  color: #111 !important;
 }
-
-/* hero-section */
-
 .hero {
-  margin: 10em 0 5em 0;
+  margin: 10em 0 5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .about,
 .about-img,
 .contact-info,
 #contact-form {
   flex-basis: 50%;
 }
-
 .button {
   padding: 12px;
   background-color: var(--secondary-color);
   width: 7em;
   color: var(--third-color);
 }
-
 .fs-1 {
   font-size: 3rem;
 }
-
 .fw-bold {
-  font-weight: bold;
+  font-weight: 700;
 }
-
 .fs-18 {
   font-size: 18px;
 }
-
 .fs-13 {
   font-size: 13px;
 }
-
 .my-5 {
   margin: 2em 0;
 }
-
 .lh-2 {
   line-height: 2.25em;
 }
-
 .btn-ring {
-  box-shadow: 0 0px 4px 0px var(--primary-color);
+  box-shadow: 0 0 4px 0 var(--primary-color);
 }
-
 .btn-orange {
   background-color: var(--primary-color);
   border: none;
-  color: white;
+  color: #fff;
   width: 8em;
 }
-
 .img-full-size {
   width: 300px;
 }
-
 .circle {
   border-radius: 50%;
 }
-
-/* services */
 .main {
   margin-top: 1.25em;
 }
-
 .fs-2 {
   font-size: 2.2rem;
 }
-
 .text-center {
   text-align: center;
 }
-
 .fw-italic {
   font-style: italic;
 }
-
 .grid-lg-3 {
   margin: 2em 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2em;
 }
-
 .small-cards.active {
   background-color: var(--primary-color);
 }
-
 .small-cards {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0.5em 0em;
+  padding: 0.5em 0;
   border-radius: 2px;
   width: 75%;
   background-color: var(--dark-light);
 }
-
 .icon {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: black;
+  background-color: #000;
   position: relative;
 }
-
 .active .icon {
-  background-color: white;
+  background-color: #fff;
 }
-
 .small-cards .icon i {
   position: absolute;
   top: 15px;
   left: 15px;
   color: var(--primary-color);
 }
-
 .fs-normal {
   font-size: 16px;
 }
-
 .pointer {
   cursor: pointer;
   color: var(--primary-color);
 }
-
 .small-cards.active .pointer {
-  color: white;
+  color: #fff;
 }
-
 .ms-2 {
   left: 17px !important;
 }
-
 .me-2 {
   left: 12px !important;
 }
-
-/* projects */
 .Projects {
   margin-top: 5em;
 }
-
 .project img {
   cursor: pointer;
   transform: scale(1);
   transition: 0.7s;
   z-index: 1;
 }
-
 .project img:hover {
   transform: scale(1.15);
   transition: 0.7s;
   z-index: 5;
 }
-
 .d-flex,
 .footer {
   display: flex;
   align-items: center;
 }
-
 .justify-space-between {
   justify-content: space-between;
 }
-
 .title,
 .viewall,
 .testimo-title {
   flex-basis: 50%;
 }
-
 .testimo-cards {
   flex-basis: 40%;
   margin-right: 5%;
 }
-
 .mb-2 {
   margin-bottom: 1em;
 }
-
 .link-orange {
   color: var(--primary-color);
   font-size: 14px;
 }
-
 .ms-3 {
   margin-left: 0.5em;
 }
-
 .h-180 {
   height: 180px;
 }
-/* pricing */
 .pricing {
-  margin: 5em 0 5em 0;
+  margin: 5em 0;
 }
-
 .text-secondary {
-  color: rgb(105, 104, 104);
+  color: #696868;
 }
-
 .grid-lg-4 {
   margin-top: 2em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3em;
 }
-
 .pricing-card {
   background-color: var(--dark-light);
 }
-
 .pricing-card h4 {
   padding-top: 1em;
 }
-
 .price {
   color: var(--primary-color);
-  margin: 0.25em 0 0.25em 0;
+  margin: 0.25em 0;
 }
-
 .fs-3 {
   font-size: 1.75rem;
 }
-
 .line-full-width {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
-
 .benefits {
   margin-top: 1em;
 }
-
 .benefit {
   text-align: center;
   line-height: 2.25em;
 }
-
 .btn-border-orange {
   background-color: transparent;
-  color: white;
+  color: #fff;
   border: 1px solid var(--primary-color);
-  margin: 1.5em 0 1.5em 0;
+  margin: 1.5em 0;
 }
-
 .mt-2 {
-  margin: 1.5em 0 1.5em 0;
+  margin: 1.5em 0;
 }
-
-/* testimonials */
 .mySlides {
   display: none;
 }
-
-/* The dots/bullets/indicators */
 .dot {
   margin-right: 10px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: rgb(114, 114, 114);
+  background-color: #727272;
   cursor: pointer;
   transition: background-color 0.6s ease;
 }
-
 .active,
 .dot:hover {
   background-color: var(--primary-color);
 }
-
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -409,7 +322,6 @@ header {
     opacity: 1;
   }
 }
-
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -418,28 +330,22 @@ header {
     opacity: 1;
   }
 }
-
 .testimonials {
-  margin: 10em 0 10em 0;
+  margin: 10em 0;
 }
-
 .lh-15 {
   margin-top: 0.5em;
   line-height: 1em;
 }
-
 .mt-5 {
   margin-top: 5em;
 }
-
 .mb-5 {
   margin-bottom: 5em !important;
 }
-
 .pb-5 {
   padding-bottom: 10em !important;
 }
-
 .testimo-cards {
   border: 1px solid;
   flex-basis: 40%;
@@ -447,12 +353,10 @@ header {
   height: 150px;
   border-radius: 8px;
 }
-
 .testimo-cards .testimonials-name {
   margin-top: 110px;
   margin-left: 20px;
 }
-
 .card-testimonial {
   position: absolute;
   top: -3em;
@@ -462,11 +366,9 @@ header {
   width: 100%;
   height: 150px;
 }
-
 .card-testimonial p {
   padding: 25px;
 }
-
 .testimo-img {
   position: absolute;
   top: -4.5em;
@@ -476,25 +378,19 @@ header {
   z-index: 2;
   border-radius: 50%;
 }
-
-/* contact */
 .contact {
   margin-top: 5em;
 }
-
 .fs-4 {
   font-size: 1.25rem;
 }
-
 label {
   display: block;
   margin-bottom: 4px;
 }
-
 .form-group {
   margin-bottom: 2em;
 }
-
 .form-group input,
 .form-group textarea {
   width: 75%;
@@ -506,11 +402,9 @@ label {
   resize: none;
   color: #eee;
 }
-
 form .btn-orange {
   width: fit-content;
 }
-
 .newsletter {
   background-color: var(--dark-light);
   padding: 4em;
@@ -518,333 +412,232 @@ form .btn-orange {
   border-top-left-radius: 8em;
   margin: 3em 0;
 }
-
 .text-orange {
   color: var(--primary-color);
 }
-
 #email-2 {
   padding: 12px;
   border-radius: 4px;
   width: 50%;
   border: none;
 }
-
-/* footer */
-
 .mt-4 {
   margin-top: 2em;
 }
-
 .flex-35 {
   flex-basis: 35%;
 }
-
 .flex-60 {
   flex-basis: 60%;
 }
-
 .mt-1 {
   margin-top: 0.75em;
 }
-
 .contact-list li a {
-  color: white;
+  color: #fff;
   margin-right: 5px;
 }
-
 .copyright {
   background-color: var(--primary-color);
   padding: 8px;
 }
-
 .me-3 {
   margin-right: 12px;
 }
-
 .d-md-flex {
   display: none;
 }
-
 .btn a {
-  color: white;
+  color: #fff;
 }
-
-/* responsive design */
-
 @media (max-width: 1200px) {
-  /* navbar */
-
   .navbar {
     width: 70%;
   }
-
   .navigation {
     width: 70%;
   }
-
-  /* services */
-
   .grid-lg-3 {
     gap: 1.5em;
   }
-
   .icon {
     margin-right: 8px;
   }
-
   .small-cards {
     padding: 0.75em 0.5em;
     width: 100%;
   }
-
-  /* projects */
-
   .viewall {
     flex-basis: 45%;
   }
-
-  /* pricing */
-
   .grid-lg-4 {
     gap: 2em;
   }
-
-  /* testimonials */
-
   .testimo-cards {
     height: 180px;
   }
-
   .testimo-cards .testimonials-name {
     margin-top: 140px;
   }
-
   .card-testimonial {
     height: 180px;
   }
 }
-
-/* responsive design 2 */
-
 @media (max-width: 992px) and (min-width: 768px) {
   .container {
     width: 95%;
   }
-
-  /* header styles */
-
   .res-navigation {
     display: block;
     transition: 0.8s;
   }
-
   .navigation-phone {
     width: 100%;
-    background-color: rgb(136, 135, 135);
+    background-color: #888787;
     padding: 1em;
     display: none;
     transition: 0.8s;
   }
-
   .block {
     display: block;
     transition: 0.8s;
   }
-
   .navbar {
     display: none;
   }
-
   .btn {
     border: none;
   }
-
-  /* services */
-
   .grid-md-2 {
     margin: 2em 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
   }
-
   .small-cards {
     width: 100%;
   }
-
-  /* projects */
   .Projects {
     margin-top: 5em;
   }
-
   .d-flex,
   .footer {
     display: block;
   }
-
-  /* pricing */
   .pricing-card {
     width: 80%;
     margin: 2em auto;
   }
-
   .btn-border-orange {
     background-color: transparent;
-    color: white;
+    color: #fff;
     border: 1px solid var(--primary-color);
-    margin: 1.5em 0 1.5em 0;
+    margin: 1.5em 0;
   }
-
-  /* testimonials */
   .testimo-title .d-md-none {
     display: none;
   }
-
   .testimonials .d-md-flex {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
   .testimo-cards {
     width: 75%;
     height: 170px;
     margin: 7em 0 0 5em;
   }
-
   .testimo-cards .testimonials-name {
     margin-top: 130px;
   }
-
   .card-testimonial {
     height: 170px;
   }
-
-  /* contact */
-
   .contact-info .mt-5 {
     margin-top: 1em;
   }
-
   .newsletter {
     border-radius: 12px;
     border-top-left-radius: 12em;
     margin: 8em 0;
   }
-
   .d-none {
     display: none;
   }
-
-  /* footer */
-
   .contact-list {
     margin-top: 1em;
   }
-
   .copyright .d-flex {
     display: flex;
   }
 }
-
-/* responsive design 2 */
-
 @media (max-width: 768px) {
   .container {
     width: 95%;
   }
-
-  /* header styles */
-
   .res-navigation {
     display: block;
   }
-
   .navigation-phone {
     width: 100%;
-    background-color: rgb(136, 135, 135);
+    background-color: #888787;
     padding: 1em;
     display: none;
     transition: 1s all;
   }
-
   .block {
     display: block;
     transition: 1s all;
   }
-
   .navbar {
     display: none;
   }
-
   .btn {
     border: none;
   }
-
-  /* hero-section */
-
   .hero {
     display: block;
   }
-
   .about,
   .about-img {
     width: 100%;
   }
-
-  /* services */
-
   .grid-md-2 {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5em;
   }
-
   .small-cards {
     width: 100%;
   }
-
-  /* projects */
-
   .d-flex,
   .footer {
     display: block;
   }
-
-  /* pricing */
-
   .btn-border-orange {
     background-color: transparent;
-    color: white;
+    color: #fff;
     border: 1px solid var(--primary-color);
-    margin: 1.5em 0 1.5em 0;
+    margin: 1.5em 0;
   }
-
-  /* testimonials */
   .testimonials {
     margin: 3em 0;
   }
-
   .testimo-cards {
     width: 80%;
     height: 150px;
     margin: 8em 0 0 4em;
   }
-
   .testimo-title .d-md-none {
     display: none;
   }
-
   .d-md-flex {
     display: flex;
     justify-content: center;
   }
-
   .testimo-cards .testimonials-name {
     margin-top: 110px;
     margin-left: 20px;
   }
-
   .card-testimonial {
     position: absolute;
     top: -3em;
@@ -854,11 +647,9 @@ form .btn-orange {
     width: 100%;
     height: 150px;
   }
-
   .card-testimonial p {
     padding: 25px;
   }
-
   .testimo-img {
     position: absolute;
     top: -5.5em;
@@ -866,25 +657,19 @@ form .btn-orange {
     width: 100px;
     z-index: 2;
   }
-
-  /* contact */
   .contact {
     margin-top: 5em;
   }
-
   .fs-4 {
     font-size: 1.25rem;
   }
-
   label {
     display: block;
     margin-bottom: 4px;
   }
-
   .form-group {
     margin-bottom: 2em;
   }
-
   .form-group input,
   .form-group textarea {
     width: 75%;
@@ -896,125 +681,88 @@ form .btn-orange {
     resize: none;
     color: #eee;
   }
-
   form .btn-orange {
     width: fit-content;
   }
-
   .d-none {
     display: none;
   }
-
-  /* footer */
   .footer {
     margin-top: 5em;
   }
-
   .contact-list {
     margin-top: 2.5em;
   }
-
   .contact-list li a {
-    color: white;
+    color: #fff;
     margin-right: 5px;
   }
-
   .copyright .contact-list {
     margin-top: 0;
   }
-
   .copyright .d-flex {
     display: flex;
     align-items: center;
   }
 }
-
-/* responsive design 3 */
-
 @media (max-width: 576px) {
   .container {
     width: 95%;
   }
-
   .mt-sm-5 {
     margin-top: 5em;
   }
-
-  /* header styles */
-
   .res-navigation {
     display: block;
   }
-
   .navigation-phone {
     width: 100%;
-    background-color: rgb(136, 135, 135);
+    background-color: #888787;
     padding: 1em;
     display: none;
     transition: 1s all;
   }
-
   .block {
     display: block;
     transition: 1s all;
   }
-
   .navbar {
     display: none;
   }
-
   .btn {
     border: none;
   }
-
-  /* hero-section */
-
   .hero {
     display: block;
   }
-
   .about,
   .about-img {
     width: 100%;
   }
-
-  /* services */
-
   .grid-xs-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-
   .small-cards {
     width: 100%;
   }
-
-  /* projects */
-
   .d-flex,
   .footer {
     display: block;
     align-items: center;
   }
-
-  /* pricing */
-
   .btn-border-orange {
     background-color: transparent;
-    color: white;
+    color: #fff;
     border: 1px solid var(--primary-color);
-    margin: 1.5em 0 1.5em 0;
+    margin: 1.5em 0;
   }
-
   .pricing-card {
     margin: 2em auto;
     width: 70%;
   }
-
-  /* testimonials */
   .testimonials {
     margin: 3em 0;
   }
-
   .testimo-cards {
     border: 1px solid;
     flex-basis: 40%;
@@ -1022,12 +770,10 @@ form .btn-orange {
     height: 170px;
     border-radius: 8px;
   }
-
   .testimo-cards .testimonials-name {
     margin-top: 130px;
     margin-left: 20px;
   }
-
   .card-testimonial {
     position: absolute;
     top: -3em;
@@ -1037,11 +783,9 @@ form .btn-orange {
     width: 100%;
     height: 170px;
   }
-
   .card-testimonial p {
     padding: 25px;
   }
-
   .testimo-img {
     position: absolute;
     top: -5.5em;
@@ -1049,34 +793,26 @@ form .btn-orange {
     width: 100px;
     z-index: 2;
   }
-
   .d-md-flex {
     display: flex;
     justify-content: center;
   }
-
   .testimo-title .d-md-none {
     display: none;
   }
-
-  /* contact */
   .contact {
     margin-top: 5em;
   }
-
   .fs-4 {
     font-size: 1.25rem;
   }
-
   label {
     display: block;
     margin-bottom: 4px;
   }
-
   .form-group {
     margin-bottom: 2em;
   }
-
   .form-group input,
   .form-group textarea {
     width: 75%;
@@ -1088,46 +824,32 @@ form .btn-orange {
     resize: none;
     color: #eee;
   }
-
   form .btn-orange {
     width: fit-content;
   }
-
-  /* newsletter */
-
   .newsletter {
     display: none;
   }
-
-  /* footer */
   .footer {
     margin-top: 5em;
   }
-
   .contact-list {
     margin-top: 2.5em;
   }
-
   .contact-list li a {
-    color: white;
+    color: #fff;
     margin-right: 5px;
   }
-
   .copyright .contact-list {
     margin-top: 0;
   }
-
   .copyright .d-flex {
     display: flex;
     align-items: center;
   }
 }
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
 .services .service-box {
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  box-shadow: 0 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
   padding: 60px 30px;
   text-align: center;
@@ -1145,7 +867,7 @@ form .btn-orange {
   transition: 0.3s;
 }
 .services .service-box h3 {
-  color: #444444;
+  color: #444;
   font-weight: 700;
 }
 .services .service-box .read-more {
@@ -1250,118 +972,94 @@ form .btn-orange {
 .services .d-block {
   display: block;
 }
-
 .w-35 {
   width: 35%;
 }
-
 .justify-space-around {
   justify-content: space-around;
 }
-
 .ms-6 {
   margin-left: 6em;
 }
-
 .me-6 {
   margin-right: 6em;
 }
-
 .bg-white {
-  background-color: white;
+  background-color: #fff;
   margin-top: 2em;
 }
-
 .text-dark {
-  color: #111111;
+  color: #111;
 }
-
 .p-5 {
   padding: 5em;
 }
-
 .p-3 {
   padding: 3em;
 }
-
 .bg-image {
-  background-image: url("./images/background.png");
+  background-image: url(./images/background.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .sticky {
   position: fixed;
   top: 0;
   width: 80%;
-  background-color: black;
+  background-color: #000;
   z-index: 150;
   padding: 1em;
   transition: 0.8s;
 }
-
-/* hovers */
 .btn-white-hv,
 .btn-white-hv a {
   transition: 0.8s;
 }
-
 .btn-white-hv:hover {
   transition: 0.8s;
   background-color: var(--primary-color);
 }
-
 .btn-white-hv:hover a {
-  color: white !important;
+  color: #fff !important;
   transition: 0.8s;
 }
-
 .btn-orange-hv {
   transition: 0.8s;
 }
-
 .btn-orange-hv:hover {
   background-color: var(--third-color);
   transition: 0.8s;
 }
-
 .small-cards,
 .small-cards .pointer,
 .small-cards .icon {
   transition: 0.8s;
 }
-
 .small-cards:hover {
   background-color: var(--primary-color);
   transition: 0.8s;
 }
-
 .small-cards:hover .pointer {
-  color: white;
+  color: #fff;
   transition: 0.8s;
 }
-
 .small-cards:hover .icon {
-  background-color: white;
+  background-color: #fff;
   transition: 0.8s;
 }
-
 .link-orange:hover,
 .link-orange:hover i {
   transition: 0.2s;
   color: var(--third-color) !important;
 }
-
 .link-orange {
   transition: 0.2s;
 }
-
 .btn-border-orange:hover {
   background-color: var(--primary-color);
   transition: 0.7s;
 }
-
 .btn-border-orange {
   transition: 0.7s;
 }
